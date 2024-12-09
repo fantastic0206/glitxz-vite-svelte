@@ -1,0 +1,30 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"paths": {
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"],
+			"$com": ["./src/lib/components"],
+			"$com/*": ["./src/lib/components/*"],
+			"$q": ["./src/lib/queries"],
+			"$q/*": ["./src/lib/queries/*"],
+			"$stores": ["./src/lib/stores"],
+			"$types": ["./src/lib/types"],
+			"$types/*": ["./src/lib/types/*"],
+			"$z": ["./src/lib/types/zod"],
+			"$z/*": ["./src/lib/types/zod/*"]
+		},
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true
+	}
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+	//
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+}

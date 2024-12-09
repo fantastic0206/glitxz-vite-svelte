@@ -1,0 +1,1 @@
+export type ColorString = 'primaryGreen' | 'primaryRed' | 'primaryBlue' | 'primarySalmon' | 'primaryCyan';

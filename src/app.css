@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+:root {
+  --nav-height: 112px;
+  --linear-fade: 0deg, rgba(0, 0, 0, .89), rgba(0, 0, 0, .4), rgba(1, 1, 1, 0.1);
+  --primaryGreen : #00ff4e;    
+  --primaryRed : #ff0000;    
+  --primaryBlue : #031cff;
+  --primarySalmon : #F06B6F;
+  --primaryCyan : #1BFFE2;
+}
+
+* {
+  font-family: "navigo", sans-serif;  
+  src: url(https://use.typekit.net/gny8rkb.css);
+}
